@@ -1,0 +1,362 @@
+set linenumbers
+
+
+bind ^Z undo main # Откатить
+bind ^X redo main # Вернуть
+bind M-E writeout main # Пересохранить
+bind F2 help main # Справка
+bind F12 exit main # Выход
+bind ^E writeout main # Открытие файла
+bind ^V paste main # Вставка
+bind ^C copy main # Копировать
+bind F3 whereis main # Меню поиска
+bind M-F replace main # Меню замены
+bind M-Q mark main # Начать выделение для копирования и т.д.
+bind M-5 refresh main # Обновить экран
+bind M-W whitespacedisplay main # Отображение пробелов и табов
+bind F11 smarthome main # Отображение синтакстиса
+bind ^K comment main # Закоментировать сторку
+
+
+## Default - makes ## as comment
+ include "/usr/share/nano/default.nanorc"
+## Emacs
+ include "/usr/share/nano/dotemacs.nanorc"
+## C++
+ include "/usr/share/nano/c.nanorc"
+## C
+ include "/usr/share/nano/c-file.nanorc"
+## Pov-Ray
+ include "/usr/share/nano/pov.nanorc"
+## HTML
+##there is better one in xml.nanorc
+ include "/usr/share/nano/html.nanorc"
+## TeX
+ include "/usr/share/nano/tex.nanorc"
+## Quoted emails (under e.g. mutt)
+ include "/usr/share/nano/mutt.nanorc"
+## Patch files
+ include "/usr/share/nano/patch.nanorc"
+## Manpages
+ include "/usr/share/nano/man.nanorc"
+## Groff
+ include "/usr/share/nano/groff.nanorc"
+## Perl
+ include "/usr/share/nano/perl.nanorc"
+## Python
+ include "/usr/share/nano/python.nanorc"
+## Ruby
+ include "/usr/share/nano/ruby.nanorc"
+## Java
+ include "/usr/share/nano/java.nanorc"
+## Assembler
+ include "/usr/share/nano/asm.nanorc"
+## Bourne shell scripts
+ include "/usr/share/nano/sh.nanorc"
+## Gentoo ebuilds and such
+ include "/usr/share/nano/gentoo.nanorc"
+## PHP something missing in there...
+#include "/usr/share/nano/php.nanorc"
+## PHP
+include "/usr/share/nano/php2.nanorc"
+## Xorg config
+include "/usr/share/nano/xorg.nanorc"
+## XML
+include "/usr/share/nano/xml.nanorc"
+## URLS
+include "/usr/share/nano/urls.nanorc"
+## CSS
+include "/usr/share/nano/css.nanorc"
+## Conky
+include "/usr/share/nano/conky.nanorc"
+## .cf
+include "/usr/share/nano/maincf.nanorc"
+## *rc - catches more files for now
+#include "/usr/share/nano/rcfiles.nanorc"
+## *rc
+include "/usr/share/nano/rcfiles-new.nanorc"
+## profile
+include "/usr/share/nano/profile.nanorc"
+## java script
+include "/usr/share/nano/js.nanorc"
+## configs
+include "/usr/share/nano/configfiles.nanorc"
+## Xstuff
+include "/usr/share/nano/xdefaults.nanorc"
+## configs
+include "/usr/share/nano/config.nanorc"
+## configs
+include "/usr/share/nano/config2.nanorc"
+## configs
+include "/usr/share/nano/config3.nanorc"
+## configs
+include "/usr/share/nano/tab.nanorc"
+## configs
+include "/usr/share/nano/passwd.nanorc"
+include "/usr/share/nano/desc.nanorc"
+## Delphi
+include "/usr/share/nano/delphi.nanorc"
+# ChangeLog - colors everything in blue
+#include "/usr/share/nano/changelog.nanorc"
+## ChangeLog		(C)ryszardzonk
+include "/usr/share/nano/changelogs.nanorc"
+## video metadata info	(C)ryszardzonk
+include "/usr/share/nano/info.nanorc"
+## configs in /etc	(C)ryszardzonk
+include "/usr/share/nano/etc-stuff.nanorc"
+## logs in /var/log	(C)ryszardzonk
+include "/usr/share/nano/log-stuff.nanorc"
+## nanorc syntax
+include "/usr/share/nano/nanorc.nanorc"
+## *.po files		(C)ryszardzonk
+include "/usr/share/nano/po.nanorc"
+## Apache 2
+include "/usr/share/nano/apache2.nanorc"
+## Apache 2 Virtual Host
+include "/usr/share/nano/vhost.nanorc"
+## /etc/init.d/*	custom gentoo.nanorc
+include "/usr/share/nano/initscript.nanorc"
+## Named		(C)ryszardzonk
+include "/usr/share/nano/named.nanorc"
+## File Types		(C)ryszardzonk
+include "/usr/share/nano/mimetype.nanorc"
+## /etc/initng/		custom sh.nanorc
+include "/usr/share/nano/initng.nanorc"
+## /etc/xml         custom xml.nanorc
+include "/usr/share/nano/etcxml.nanorc"
+## sh.nanorc syntax for custom files
+include "/usr/share/nano/shlike.nanorc"
+## c.nanorc syntax for custom files
+include "/usr/share/nano/clike.nanorc"
+## EKG History view     (C)ryszardzonk
+include "/usr/share/nano/ekghistory.nanorc"
+## others		(C)ryszardzonk
+include "/usr/share/nano/others.nanorc"
+## others		(C)ryszardzonk + LinuxHelp Wiki
+include "/usr/share/nano/makefile.nanorc"
+## postegreSQL
+include "/usr/share/nano/postgresql.nanorc"
+## Debian Sources (off by default)
+include "/usr/share/nano/sources_list.nanorc"
+## SoftCam.Key mgcamd
+include "/usr/share/nano/softcam.nanorc"
+## Paludis http://gentoo-wiki.com/TIP_Nano_Context_Highlighting
+include "/usr/share/nano/paludis.nanorc"
+## HAVP config		(C)ryszardzonk
+include "/usr/share/nano/havp.nanorc"
+## Privoxy		(C)ryszardzonk
+include "/usr/share/nano/privoxy.nanorc"
+
+
+## Все команды которы я нашел на офю сайте:
+##  https://www.nano-editor.org/dist/v2.1/nanorc.5.html#KEY%20BINDINGS
+##help -- Invoke the help menu.
+##
+##
+##cancel -- Cancel the current command.
+##
+##
+##exit -- Exit from the program.
+##
+##
+##writeout  -- Write the current buffer to disk.
+##
+##
+##justify -- Justify the current text.
+##
+##
+##insert -- Insert a file into the current buffer (or into a new buffer when multibuffer is enabled).
+##
+##
+##whereis  -- Search for text in the current buffer.
+##
+##
+##searchagain -- Repeat the last search command.
+##
+##
+##up -- Move up in the editor or browser.
+##
+##
+##down -- Move down in the editor or browser.
+##
+##
+##left -- Move left in the editor or browser.
+##
+##
+##right -- Move right in the editor or browser.
+##
+##
+##cut -- Cut the current line of text and store it.
+##
+##
+##uncut -- Copy the currently stored text into the current buffer position.
+##
+##
+##curpos -- Show the current line, column, word positions in the file.
+##
+##
+##firstline -- Move to the first line of the file.
+##
+##
+##
+##lastline -- Move to the last line of the file.
+##
+##
+##gotoline -- Move to a specific line (and column if specified).
+##
+##
+##replace -- Interactively replace text within the current buffer.
+##
+##
+##mark -- Begin selecting text for cutting or pasting at the 
+##current position.
+##
+##
+##copytext -- Copy the currently marked text without deleting it.
+##
+##
+##indent -- Indent the currently marked text (shift to the right).
+##
+##
+##unindent -- Un-indent the currently marked text (shift to the left).
+##
+##
+##nextword -- Move the cursor to the beginning of the next word.
+##
+##
+##prevword -- Move the cursor to the beginning of the previous word.
+##
+##
+##home -- Move the cursor to the beginning of the current line.
+##
+##
+##end -- Move the cursor to the end of the current line.
+##
+##
+##beginpara -- Move the cursor to the beginning of the current paragraph.
+##
+##
+##endpara -- Move the cursor to the end of the current paragraph.
+##
+##
+##findbracket -- Move the cursor to the matching bracket (brace, parenthesis, etc.) of the one under the cursor.
+##
+##
+##scrollup -- Scroll up one line of text from the current position.
+##
+##
+##scrolldown -- Scroll down one line of text from the current position.
+##
+##
+##prevbuf -- Switch to editing/viewing the previous buffer when using multibuffer mode.
+##
+##
+##nextbuf -- Switch to editing/viewing the next buffer when using multibuffer mode.
+##
+##
+##verbatim -- Insert the next character verbatim into the file.
+##
+##
+##tab -- Insert a tab at the current cursor location.
+##
+##
+##enter -- Insert a new line below the current one.
+##
+##
+##delete -- Delete the character under the cursor.
+##
+##
+##fulljustify -- Justify the entire current file.
+##
+##
+##wordcount -- Count the number of words in the current buffer.
+##
+##
+##refresh -- Refresh the screen.
+##
+##
+##undoubtedly -- Undo the text action peformed (add text, delete text, etc).
+##
+##
+##redo -- "Re-do" the last undone action (i.e. undo an undo)
+##
+##
+##suspend -- Suspend the editor (if the suspend function is enabled, see the "suspendenable" entry below).
+##
+##casesens -- Toggle case sensitivity in searching (search/replace menus only).
+##
+##regexp -- Toggle whether searching/replacing is based on literal strings or regular expressions.
+##
+##prevhistory -- Show the previous history entry in the prompt menus (e.g. search).
+##
+##nexthistory -- Show the next history entry in the prompt menus (e.g. search).
+##
+##dontreplace -- Switch back to searching instead of replacing.
+##
+##gototext -- Search for files matching a string in the file browser (reading or writing files).
+##
+##dosformat -- When writing a file, switch to writing a DOS format (CR/LF).
+##
+##macformat -- When writing a file, switch to writing a Mac format.
+##
+##append -- When writing a file, append to the end instead of overwriting.
+##
+##prepend -- When writing a file, ’prepend’ (write at the beginning) instead of overwriting.
+##
+##backup -- When writing a file, create a backup of the current file.
+##
+##firstfile -- Move to the first file when using the file browser (reading or writing files).
+## -- 
+##lastfile -- Move to the last file when using the file browser (reading or writing files).
+##
+##nohelp -- Toggle showing/hiding the two-line list of key bindings at the bottom of the screen.
+##
+##constupdate -- Constantly display the current line, column, word positions.
+##
+##morespace -- Toggle showing/hiding the blank line which ’separates’ the ’title’ from the file text.
+##
+##smoothscroll -- Toggle smooth scrolling when moving via the arrow keys.
+##
+##whitespacedisplay -- Toggle whether whitespace is shown.
+##
+##smarthome -- Toggle whether the smart home key function is enabled.
+##
+##autoindent -- Toggle whether new lines will contain the same amount of whitespace as the line above.
+##
+##cuttoend -- Toggle whether cutting text will cut the whole line or just from the current cursor position to the end of the line.
+##
+##nowrap -- Toggle whether long lines will be wrapped to the next line.
+##
+##suspendenable -- Toggle whether the suspend sequence (normally ^Z) will suspend the editor window.
+##
+##Valid menu sections are: -- 
+##
+##main -- The main editor window where text is entered.
+##
+##search -- The search menu (AKA whereis).
+##
+##replace -- The ’search to replace’ menu.
+##
+##replacewith -- The ’replace with’ menu, which comes up after ’search to replace’.
+##
+##gotoline -- The ’goto line (and column)’ menu.
+##
+##writeout -- The ’write file’ menu.
+##
+##insert -- The ’insert file’ menu.
+##
+##extcmd -- The menu for inserting output from an external comman, reached from the insert menu.
+##
+##help -- The help menu.
+##
+##spell -- The interactive spell checker Yes/no menu.
+##
+##browser -- The file browser for inserting or writing a file.
+##
+##whereisfile -- The ’search for a file’ menu in the file browser.
+##
+##gotodir -- The ’go to directory’ menu.
+##
+##all -- A special name meaning: apply to all menus where this function exists.
+##
+##unbind key menu -- Unbind the key key from the menu named menu or from all menus by using all. Same key syntax as for binding. Rebinds the key key to a new function named function in the context of menu menu. The format of key should be one of:
